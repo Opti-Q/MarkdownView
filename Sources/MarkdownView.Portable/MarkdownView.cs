@@ -426,7 +426,7 @@
 
                     var url = link.Url;
 
-                    if (!(url.StartsWith("http://") || url.StartsWith("https://")))
+                    if (!(url.StartsWith("http://") || url.StartsWith("https://") || url.StartsWith("mailto:") || url.StartsWith("tel:")))
                     {
                         url = $"{this.RelativeUrlHost?.TrimEnd('/')}/{url.TrimStart('/')}";
                     }
